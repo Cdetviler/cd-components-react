@@ -9,17 +9,18 @@ This respository serves as a way for me and contributers to learn the nuances of
    1. You may not have this version specified in the app. In this case you would need to run `nvm install` and then run `nvm use`
 3. in the root directory, run `yarn install`
 4. in the root directory, run `yarn storybook` -- this should start the local storybook server at `http://localhost:6006/`. 
-5. run `npm install -g plop` to globally install [https://plopjs.com/](Plop)
+5. run `npm install -g plop` to globally install [PlopJs](https://plopjs.com/)
 
 ## Chosen Technologies and Build Tools
 
 1. This project uses [storybook](https://storybook.js.org/) for local development. 
 2. This Project uses [Yarn](https://yarnpkg.com/) as a package manager
-3. Components are written exclusively in [https://www.typescriptlang.org/](Typescript) and [https://reactjs.org/](React)
+3. Components are written exclusively in [Typescript](https://www.typescriptlang.org/) and [React](https://reactjs.org/)
 4. Styling is done with [StyledComponents](https://styled-components.com/)
-5. TODO: Testing will eventually be added using [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-6. TODO: Rollup might eventually be added in order to publish the package to NPM
-7. TODO: Husky and Commitlint could be added to enforce commit rules 
+5. [PlopJs](https://plopjs.com/) is used to automatically generate component files
+6. TODO: Testing will eventually be added using [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+7. TODO: Rollup might eventually be added in order to publish the package to NPM
+8. TODO: Husky and Commitlint could be added to enforce commit rules 
 
 ## Directory Structure
 
