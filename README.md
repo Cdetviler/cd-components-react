@@ -6,8 +6,10 @@ This respository serves as a way for me and contributers to learn the nuances of
 
 1. clone the repo
 2. set up NVM (Node version manager) and then run `nvm use` within the root directory. This will allow `nvm` to look for `.nvmrc` in the project and use the specified version.
+   1. You may not have this version specified in the app. In this case you would need to run `nvm install` and then run `nvm use`
 3. in the root directory, run `yarn install`
 4. in the root directory, run `yarn storybook` -- this should start the local storybook server at `http://localhost:6006/`. 
+5. run `npm install -g plop` to globally install [https://plopjs.com/](Plop)
 
 ## Chosen Technologies and Build Tools
 
@@ -59,3 +61,7 @@ For the time being, the master branch will be `main`. Eventually it would be gre
 5. An example commit message might be `feat(icon): adds icon directory and file structure`
 
 If you're not developing a feature, but simply fixing a bug, you would instead create a branch called `fix/icon` and a commit message such as `fix(icon): updates icon to display correct image`
+
+
+## Developing a component
+1. from the root directory, run `plop` and type the component name using a capital letter. This will generate all 6 necessary files for the component along with boilerplate for each file. If this does not run successfully, see step 5 of the Installation section. 
