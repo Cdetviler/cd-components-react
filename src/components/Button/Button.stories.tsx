@@ -19,4 +19,4 @@ export const Secondary = Template.bind({});
 Secondary.args = { children: "My Button", size: "md", variant: "secondary", theme: themeDefault };
 
 export const Success = Template.bind({});
-Secondary.args = { children: "My Button", size: "md", variant: "success", theme: themeDefault };
+Success.args = { children: "My Button", size: "md", variant: "success", theme: themeDefault };

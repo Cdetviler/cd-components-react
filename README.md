@@ -57,3 +57,5 @@ For the time being, the master branch will be `main`. Eventually it would be gre
 3. in most cases, a "feature" will be a component
 4. For example, if we wanted to create an Icon component, our branch would be called `feat/icon` and it would be branched off of the latest in `main`
 5. An example commit message might be `feat(icon): adds icon directory and file structure`
+
+If you're not developing a feature, but simply fixing a bug, you would instead create a branch called `fix/icon` and a commit message such as `fix(icon): updates icon to display correct image`
