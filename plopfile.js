@@ -1,5 +1,5 @@
 export default function (plop) {
-    // controller generator
+    // component generator
     plop.setGenerator('component', {
         description: 'generates the required files for each component',
         prompts: [{
