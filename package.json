@@ -2,6 +2,7 @@
   "name": "detviler-components",
   "version": "1.0.0",
   "description": "A component library built for the purposes of learning how to create a library of components as well as to hopefully provide components for personal projects in the future. ",
+  "type": "module",
   "main": "index.js",
   "repository": "https://github.com/Cdetviler/detviler-components",
   "author": "cdetviler",
@@ -28,6 +29,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "plop": "^3.1.0",
     "styled-components": "^5.3.5"
   }
 }
