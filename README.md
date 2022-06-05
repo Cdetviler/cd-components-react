@@ -1,4 +1,4 @@
-# Detviler Web Components
+# Detviler Components (React)
 
 This respository serves as a way for me and contributers to learn the nuances of creating a component library. 
 
@@ -15,12 +15,13 @@ This respository serves as a way for me and contributers to learn the nuances of
 
 1. This project uses [storybook](https://storybook.js.org/) for local development. 
 2. This Project uses [Yarn](https://yarnpkg.com/) as a package manager
-3. Components are written exclusively in [Typescript](https://www.typescriptlang.org/) and [React](https://reactjs.org/)
+3. Components are written exclusively in [Typescript](https://www.typescriptlang.org/) using [React](https://reactjs.org/) as a framework
 4. Styling is done with [StyledComponents](https://styled-components.com/)
 5. [PlopJs](https://plopjs.com/) is used to automatically generate component files
-6. TODO: Testing will eventually be added using [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-7. TODO: Rollup might eventually be added in order to publish the package to NPM
-8. TODO: Husky and Commitlint could be added to enforce commit rules 
+6. TODO: Add code formatter to maintain consistent code throughout project (prettier?)
+7. TODO: Add Husky and Commitlint to enforce commit rules 
+8. TODO: ADD [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing purposes
+9. TODO: add rollup for publishing the package to NPM
 
 ## Directory Structure
 
@@ -61,8 +62,9 @@ For the time being, the master branch will be `main`. Eventually it would be gre
 4. For example, if we wanted to create an Icon component, our branch would be called `feat/icon` and it would be branched off of the latest in `main`
 5. An example commit message might be `feat(icon): adds icon directory and file structure`
 
-If you're not developing a feature, but simply fixing a bug, you would instead create a branch called `fix/icon` and a commit message such as `fix(icon): updates icon to display correct image`
+If you're not developing a feature, but simply fixing a bug, you would instead create a branch called something like `fix/icon-display-correct-image` and a commit message such as `fix(icon): updates icon to display correct image`
 
+If you're doing something like updating the Readme to document changes, you would instead create a branch called `chore/readme-add-icon-documentation` and a commit message such as `chore(readme): adds icon documentation`
 
 ## Developing a component
 1. from the root directory, run `plop` and type the component name using a capital letter. This will generate all 6 necessary files for the component along with boilerplate for each file. If this does not run successfully, see step 5 of the Installation section. 
