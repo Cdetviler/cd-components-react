@@ -47,3 +47,13 @@ detviler-components/
 ├─ tsconfig.json
 ├─ yarn.lock
 ```
+
+## Branching strategy
+
+For the time being, the master branch will be `main`. Eventually it would be great to set up husky/commitlint to add automatic versioning and commit message enforcement, but for now we will just have to do things manually. For the time-being, we will:
+
+1. branch off of main
+2. create a branch per feature
+3. in most cases, a "feature" will be a component
+4. For example, if we wanted to create an Icon component, our branch would be called `feat/icon` and it would be branched off of the latest in `main`
+5. An example commit message might be `feat(icon): adds icon directory and file structure`
