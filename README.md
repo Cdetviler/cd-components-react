@@ -10,6 +10,7 @@ This respository serves as a way for me and contributers to learn the nuances of
 3. in the root directory, run `yarn install`
 4. in the root directory, run `yarn storybook` -- this should start the local storybook server at `http://localhost:6006/`. 
 5. run `npm install -g plop` to globally install [PlopJs](https://plopjs.com/)
+6. (Optional) If using VS code, grab the [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) vscode extensions
 
 ## Chosen Technologies and Build Tools
 
@@ -18,10 +19,11 @@ This respository serves as a way for me and contributers to learn the nuances of
 3. Components are written exclusively in [Typescript](https://www.typescriptlang.org/) using [React](https://reactjs.org/) as a framework
 4. Styling is done with [StyledComponents](https://styled-components.com/)
 5. [PlopJs](https://plopjs.com/) is used to automatically generate component files
-6. TODO: Add code formatter to maintain consistent code throughout project (prettier?)
-7. TODO: Add Husky and Commitlint to enforce commit rules 
-8. TODO: ADD [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing purposes
-9. TODO: add rollup for publishing the package to NPM
+6. Linting and code formatting are done by [eslint](https://eslint.org/) and [prettier](https://prettier.io/) using the airbnb styleguide 
+7. TODO: Add precommit git hook to run prettier maybe make it a github action?
+8. TODO: Add Husky and Commitlint to enforce commit rules 
+9. TODO: ADD [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing purposes
+10. TODO: add rollup for publishing the package to NPM
 
 ## Directory Structure
 
