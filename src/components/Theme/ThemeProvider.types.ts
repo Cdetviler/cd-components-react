@@ -1,6 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface ThemeProviderProps {
-    children: ReactNode,
-    theme: Object
+  children: ReactNode;
+  // TODO: figure out typing for the theme
+  theme: unknown;
 }
