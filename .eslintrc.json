@@ -10,6 +10,8 @@
     ],
     "rules": {
         "prettier/prettier": ["error"],
+        /* this rule doesn't make sense for typescript */
+        "react/prop-types": 0,
         "react/jsx-props-no-spreading": "off",
         "react/function-component-definition": "off",
         "import/prefer-default-export": "off",

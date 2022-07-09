@@ -1,4 +1,4 @@
-const colorNames = {
+export const colorNames = {
   // Colornames generated with https://colornamer.robertcooper.me/
   // todo: remove bootstrap colors and choose new colors
   blues: {
@@ -21,7 +21,7 @@ const colorNames = {
   },
 };
 
-const colors = {
+export const colors = {
   ...colorNames,
   semantic: {
     primary: colorNames.blues.azure,
@@ -42,9 +42,9 @@ const colors = {
   },
 };
 
-const fonts = {
+export const fonts = {
   families: {
-    fonts: ['sans-serif', 'Roboto'],
+    fonts: ['Roboto', 'sans-serif'],
   },
   sizes: {
     xs: '.64em',
@@ -55,9 +55,17 @@ const fonts = {
     xxl: '1.953rem',
     xxxl: '2.441rem',
   },
+  weights: {
+    thin: 100,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    boldest: 900,
+  }
 };
 
-const zIndex = {
+export const zIndex = {
   // This shouldn't really have a need, but it's here just in case
   basement: '-100',
   default: 'auto',
@@ -66,7 +74,7 @@ const zIndex = {
   modals: '1000',
 };
 
-const spacing = {
+export const spacing = {
   padding: {
     xs: '.25em',
     sm: '.5em',
@@ -89,6 +97,16 @@ const spacing = {
     xl: '2em',
   },
 };
+
+// todo add types to arguments to enforce theme object structure
+export const generateTheme = (colorTheme, fontTheme, zIndexTheme, spacingTheme) => {
+  return {
+    colors: colorTheme,
+    fonts: fontTheme,
+    zIndex: zIndexTheme,
+    spacing: spacingTheme
+  }
+}
 
 export const themeDefault = {
   colors,
