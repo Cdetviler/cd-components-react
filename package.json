@@ -13,6 +13,7 @@
     "@babel/core": "^7.18.2",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
+    "@storybook/storybook-deployer": "^2.8.11",
     "@types/react": "^18.0.11",
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
@@ -38,6 +39,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -s ./assets",
+    "deploy-storybook": "storybook-to-ghpages",
     "build": "rollup -c"
   },
   "dependencies": {
