@@ -2,6 +2,8 @@
 
 This respository serves as a way for me and contributers to learn the nuances of creating a component library. 
 
+## [Project Demo](cdetviler.github.io/detviler-components/)
+
 ## Installation
 
 1. clone the repo
