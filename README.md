@@ -20,10 +20,10 @@ This respository serves as a way for me and contributers to learn the nuances of
 4. Styling is done with [StyledComponents](https://styled-components.com/)
 5. [PlopJs](https://plopjs.com/) is used to automatically generate component files
 6. Linting and code formatting are done by [eslint](https://eslint.org/) and [prettier](https://prettier.io/) using the airbnb styleguide 
-7. TODO: Add precommit git hook to run prettier maybe make it a github action?
-8. TODO: Add Husky and Commitlint to enforce commit rules 
-9. TODO: ADD [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing purposes
-10. TODO: add rollup for publishing the package to NPM
+7. This project uses Husky and Commitlint to enforce commit rules 
+8. This project uses Rollup to compile the library
+9. TODO: publish package using `npm-publish`
+10. TODO: ADD [Jest](https://testing-library.com/docs/react-testing-library/intro/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing purposes
 
 ## Directory Structure
 
