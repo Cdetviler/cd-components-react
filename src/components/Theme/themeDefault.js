@@ -2,49 +2,100 @@ export const colorNames = {
   // Colornames generated with https://colornamer.robertcooper.me/
   // todo: remove bootstrap colors and choose new colors
   blues: {
-    azure: '#007bff',
-    ahriman: '#17a2b8',
+    flyingFish: '#114ad9',
+    lago: '#1db8c9',
+    kantor: '#061847',
+    catalina: '#0a2a7b'
   },
   grays: {
     ash: '#6c757d',
     white: '#ffffff',
     black: '#000000',
+    infinity: '#242631',
+    darkRiver: '#3e4347',
   },
   greens: {
     vitalize: '#28a745',
+    ghostlandsCoal: '#0a3d43',
+    algalFuel: '#1dc965',
+    pineGreen: '#0a4321',
+    naturesStrength: '#107038',
+    seaMount: '#106670',
   },
   reds: {
-    cruelRuby: '#dc3545',
+    bloodRed: '#c91d1d',
+    festiveBordeaux: '#701010',
+    bulgarianRose: '#430a0a',
   },
   yellows: {
     marigold: '#ffc107',
+    nuggetGold: '#c99b1d',
+    hiddenPassage: '#43340a',
+    hotMustard: '#705610'
   },
 };
 
 export const colors = {
   ...colorNames,
   semantic: {
-    primary: colorNames.blues.azure,
-    secondary: colorNames.grays.ash,
-    success: colorNames.greens.vitalize,
-    danger: colorNames.reds.cruelRuby,
-    warning: colorNames.yellows.marigold,
-    info: colorNames.blues.ahriman,
+    background: {
+      primary: colorNames.blues.flyingFish,
+      secondary: colorNames.grays.ash,
+      success: colorNames.greens.algalFuel,
+      danger: colorNames.reds.bloodRed,
+      warning: colorNames.yellows.nuggetGold,
+      info: colorNames.blues.lago,
+    },
     text: {
       // todo: create text colors
-      primary: colorNames.grays.black,
-      secondary: colorNames.grays.black,
-      success: colorNames.grays.black,
-      danger: colorNames.grays.black,
-      warning: colorNames.grays.black,
-      info: colorNames.grays.black,
+      primary: colorNames.blues.catalina,
+      secondary: colorNames.grays.darkRiver,
+      success: colorNames.greens.naturesStrength,
+      danger: colorNames.reds.festiveBordeaux,
+      warning: colorNames.yellows.hotMustard,
+      info: colorNames.greens.seaMount,
+    },
+    border: {
+      primary: colorNames.blues.kantor,
+      secondary: colorNames.grays.infinity,
+      success: colorNames.greens.pineGreen,
+      danger: colorNames.reds.bulgarianRose,
+      warning: colorNames.yellows.hiddenPassage,
+      info: colorNames.blues.ghostlandsCoal,
+    },
+    hover: {
+      primary: colorNames.blues.catalina,
+      secondary: colorNames.grays.darkRiver,
+      success: colorNames.greens.naturesStrength,
+      danger: colorNames.reds.festiveBordeaux,
+      warning: colorNames.yellows.hotMustard,
+      info: colorNames.greens.seaMount,
+    },
+    active: {
+      primary: colorNames.blues.kantor,
+      secondary: colorNames.grays.infinity,
+      success: colorNames.greens.pineGreen,
+      danger: colorNames.reds.bulgarianRose,
+      warning: colorNames.yellows.hiddenPassage,
+      info: colorNames.greens.ghostlandsCoal,
     },
   },
 };
 
+export const borders = {
+  sizes: {
+    xs: '.25px',
+    sm: '.5px',
+    md: '1px',
+    lg: '2px',
+    xl: '3px'
+  }
+}
+
 export const fonts = {
   families: {
-    fonts: ['Roboto', 'sans-serif'],
+    primary: 'Roboto',
+    secondary: '',
   },
   sizes: {
     xs: '.64rem',

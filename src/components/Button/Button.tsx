@@ -11,6 +11,7 @@ const Button = ({
   theme = themeDefault,
 }: ButtonProps) => {
   const StyledButtonComponent = getVariant(variant);
+  console.log(variant);
   return (
     <StyledButtonComponent variant={variant} size={size} onClick={onClick} theme={theme}>
       {children}
