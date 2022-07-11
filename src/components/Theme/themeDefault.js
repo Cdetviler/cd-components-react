@@ -47,8 +47,8 @@ export const fonts = {
     fonts: ['Roboto', 'sans-serif'],
   },
   sizes: {
-    xs: '.64em',
-    sm: '.8em',
+    xs: '.64rem',
+    sm: '.8rem',
     md: '1rem',
     lg: '1.25rem',
     xl: '1.563rem',
