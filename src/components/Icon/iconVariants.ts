@@ -40,6 +40,7 @@ const getVariant = (variant: variantType) => {
   if (foundVariant) {
     return foundVariant;
   }
+  // eslint-disable-next-line no-console
   console.error(`Variant: ${variant} does not exist in Icon component`);
   return '';
 };

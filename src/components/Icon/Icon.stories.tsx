@@ -1,7 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import Icon from './Icon';
-import { themeDefault } from '../Theme';
 import { IconProps } from './Icon.types';
 
 export default {
