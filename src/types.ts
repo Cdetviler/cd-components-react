@@ -1,4 +1,4 @@
-type semanticColors =
+export type semanticColors =
   | 'primary'
   | 'secondary'
   | 'success'
@@ -6,11 +6,10 @@ type semanticColors =
   | 'warning'
   | 'info'
   | 'custom';
-type semanticSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-
-export type { semanticColors, semanticSizes };
+export type semanticSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type fontAwesomeSizes = 'xs' | 'sm' | 'lg' | '1x' | '2x';
 
 export interface ComponentProps {
-  style: React.CSSProperties;
-  theme: any;
+  style?: React.CSSProperties;
+  theme?: any;
 }
