@@ -5,6 +5,7 @@ export interface ButtonProps extends ComponentProps {
   variant?: semanticColors;
   size?: semanticSizes;
   children: ReactNode;
+  disabled?: boolean;
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
