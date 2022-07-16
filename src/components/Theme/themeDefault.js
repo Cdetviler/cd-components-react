@@ -1,11 +1,12 @@
 export const colorNames = {
   // Colornames generated with https://colornamer.robertcooper.me/
-  // todo: remove bootstrap colors and choose new colors
   blues: {
     flyingFish: '#114ad9',
     lago: '#1db8c9',
     kantor: '#061847',
-    catalina: '#0a2a7b'
+    catalina: '#0a2a7b',
+    punchOutGlove: '#8eabf6',
+    coldBlooded: '#90e8ee',
   },
   grays: {
     ash: '#6c757d',
@@ -13,6 +14,7 @@ export const colorNames = {
     black: '#000000',
     infinity: '#242631',
     darkRiver: '#3e4347',
+    belgianBlock: '#bec3c6',
   },
   greens: {
     vitalize: '#28a745',
@@ -21,17 +23,20 @@ export const colorNames = {
     pineGreen: '#0a4321',
     naturesStrength: '#107038',
     seaMount: '#106670',
+    snowPea: '#9ce7ae',
   },
   reds: {
     bloodRed: '#c91d1d',
     festiveBordeaux: '#701010',
     bulgarianRose: '#430a0a',
+    coralCommander: '#ef8f8f',
   },
   yellows: {
     marigold: '#ffc107',
     nuggetGold: '#c99b1d',
     hiddenPassage: '#43340a',
-    hotMustard: '#705610'
+    hotMustard: '#705610',
+    gentleGlow: '#eed590',
   },
 };
 
@@ -46,6 +51,7 @@ export const colors = {
       warning: colorNames.yellows.nuggetGold,
       info: colorNames.blues.lago,
     },
+    // 20% less lightness (HSL) than background colors
     text: {
       // todo: create text colors
       primary: colorNames.blues.catalina,
@@ -55,6 +61,7 @@ export const colors = {
       warning: colorNames.yellows.hotMustard,
       info: colorNames.greens.seaMount,
     },
+    // 40% less lightness (HSL) than background colors
     border: {
       primary: colorNames.blues.kantor,
       secondary: colorNames.grays.infinity,
@@ -63,6 +70,7 @@ export const colors = {
       warning: colorNames.yellows.hiddenPassage,
       info: colorNames.blues.ghostlandsCoal,
     },
+    // 20% less lightness (HSL) than normal background colors
     hover: {
       primary: colorNames.blues.catalina,
       secondary: colorNames.grays.darkRiver,
@@ -71,6 +79,7 @@ export const colors = {
       warning: colorNames.yellows.hotMustard,
       info: colorNames.greens.seaMount,
     },
+    // 40% less lightness (HSL) than normal background colors
     active: {
       primary: colorNames.blues.kantor,
       secondary: colorNames.grays.infinity,
@@ -79,6 +88,15 @@ export const colors = {
       warning: colorNames.yellows.hiddenPassage,
       info: colorNames.greens.ghostlandsCoal,
     },
+    // 30% more lightness (HSL) than normal background colors
+    disabled: {
+      primary: colorNames.blues.punchOutGlove,
+      secondary: colorNames.grays.belgianBlock,
+      success: colorNames.greens.snowPea,
+      danger: colorNames.reds.coralCommander,
+      warning: colorNames.yellows.gentleGlow,
+      info: colorNames.blues.coldBlooded,
+    }
   },
 };
 

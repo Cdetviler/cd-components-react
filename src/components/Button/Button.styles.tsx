@@ -28,6 +28,16 @@ export const PrimaryButton = styled(StyledButton)`
   &:active {
     background-color: ${(props) => props.theme.colors.semantic.active.primary};
   }
+
+  &:disabled {
+    background-color: ${(props) => props.theme.colors.semantic.disabled.primary};
+    border-color: ${(props) => props.theme.colors.semantic.disabled.primary};
+
+    &:active,
+    &:hover {
+      background-color: ${(props) => props.theme.colors.semantic.disabled.primary};
+    }
+  }
 `;
 
 export const SecondaryButton = styled(StyledButton)`
@@ -40,6 +50,16 @@ export const SecondaryButton = styled(StyledButton)`
 
   &:active {
     background-color: ${(props) => props.theme.colors.semantic.active.secondary};
+  }
+
+  &:disabled {
+    background-color: ${(props) => props.theme.colors.semantic.disabled.secondary};
+    border-color: ${(props) => props.theme.colors.semantic.disabled.secondary};
+
+    &:active,
+    &:hover {
+      background-color: ${(props) => props.theme.colors.semantic.disabled.secondary};
+    }
   }
 `;
 
@@ -54,6 +74,16 @@ export const SuccessButton = styled(StyledButton)`
   &:active {
     background-color: ${(props) => props.theme.colors.semantic.active.success};
   }
+
+  &:disabled {
+    background-color: ${(props) => props.theme.colors.semantic.disabled.success};
+    border-color: ${(props) => props.theme.colors.semantic.disabled.success};
+
+    &:active,
+    &:hover {
+      background-color: ${(props) => props.theme.colors.semantic.disabled.success};
+    }
+  }
 `;
 
 export const DangerButton = styled(StyledButton)`
@@ -66,6 +96,16 @@ export const DangerButton = styled(StyledButton)`
 
   &:active {
     background-color: ${(props) => props.theme.colors.semantic.active.danger};
+  }
+
+  &:disabled {
+    background-color: ${(props) => props.theme.colors.semantic.disabled.danger};
+    border-color: ${(props) => props.theme.colors.semantic.disabled.danger};
+
+    &:active,
+    &:hover {
+      background-color: ${(props) => props.theme.colors.semantic.disabled.danger};
+    }
   }
 `;
 
@@ -81,6 +121,16 @@ export const WarningButton = styled(StyledButton)`
   &:active {
     background-color: ${(props) => props.theme.colors.semantic.active.warning};
   }
+
+  &:disabled {
+    background-color: ${(props) => props.theme.colors.semantic.disabled.warning};
+    border-color: ${(props) => props.theme.colors.semantic.disabled.warning};
+
+    &:active,
+    &:hover {
+      background-color: ${(props) => props.theme.colors.semantic.disabled.warning};
+    }
+  }
 `;
 
 export const InfoButton = styled(StyledButton)`
@@ -94,6 +144,16 @@ export const InfoButton = styled(StyledButton)`
   &:active {
     background-color: ${(props) => props.theme.colors.semantic.active.info};
   }
+
+  &:disabled {
+    background-color: ${(props) => props.theme.colors.semantic.disabled.info};
+    border-color: ${(props) => props.theme.colors.semantic.disabled.info};
+
+    &:active,
+    &:hover {
+      background-color: ${(props) => props.theme.colors.semantic.disabled.info};
+    }
+  }
 `;
 
 const variants = {
@@ -106,7 +166,4 @@ const variants = {
   custom: StyledButton,
 };
 
-export const getVariant = (variant: semanticColors) => {
-  console.log(variant, variants, variant in variants);
-  return variant in variants ? variants[variant] : StyledButton;
-}
+export const getVariant = (variant: semanticColors) => variant in variants ? variants[variant] : StyledButton;
