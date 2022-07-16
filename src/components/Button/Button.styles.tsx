@@ -166,4 +166,5 @@ const variants = {
   custom: StyledButton,
 };
 
-export const getVariant = (variant: semanticColors) => variant in variants ? variants[variant] : StyledButton;
+export const getVariant = (variant: semanticColors) =>
+  variant in variants ? variants[variant] : StyledButton;
