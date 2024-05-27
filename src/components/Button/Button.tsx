@@ -1,28 +1,27 @@
 import React from 'react';
-import { themeDefault } from '../Theme/themeDefault';
-import { getVariant } from './Button.styles';
 import { ButtonProps } from './Button.types';
+import styles from './button.module.css';
 
 const Button = ({
-  variant = 'custom',
+  variant = 'primary',
   size = 'md',
   children,
   onClick,
   disabled = false,
-  theme = themeDefault,
+  className = '',
 }: ButtonProps) => {
-  const StyledButtonComponent = getVariant(variant);
-  console.log(variant);
+  const classNames: String[] = [className]
+  classNames.push(styles[`${variant}Variant`]);
+  classNames.push(styles[`${size}Size`]);
+  console.log(styles.button);
   return (
-    <StyledButtonComponent
-      variant={variant}
-      size={size}
+    <button
       onClick={onClick}
-      theme={theme}
       disabled={disabled}
+      className={classNames.join(' ')}
     >
       {children}
-    </StyledButtonComponent>
+    </button>
   );
 };
 

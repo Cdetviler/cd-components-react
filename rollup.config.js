@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
+import autoprefixer from 'autoprefixer'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const packageJson = require('./package.json');
@@ -28,6 +29,13 @@ export default {
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
       extensions: ['.css'],
+      modules: true,
+      extract: true,
+      namedExports: true,
+      plugins: [autoprefixer()],
+      writeDefinitions: true,
+      configFile: false,
+      preserveModules: true
     }),
   ],
 };

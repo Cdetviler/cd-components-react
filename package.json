@@ -28,7 +28,8 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "plop": "^3.1.0",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.38",
+    "postcss-modules": "^6.0.0",
     "prettier": "^2.6.2",
     "rollup": "^2.76.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -40,7 +41,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -s ./assets",
     "deploy-storybook": "storybook-to-ghpages",
-    "build": "rollup -c"
+    "build": "rollup -c && tsc"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -55,9 +56,11 @@
     "@storybook/manager-webpack4": "^6.5.6",
     "@storybook/react": "^6.5.6",
     "@storybook/testing-library": "^0.0.11",
+    "autoprefixer": "^9.8.8",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "typescript-plugin-css-modules": "^5.1.0"
   },
   "eslintIgnore": [
     "src/components/Theme/themeDefault.js"

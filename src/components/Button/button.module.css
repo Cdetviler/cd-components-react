@@ -1,0 +1,132 @@
+.button {
+    font-family: var(--cd-button-font-family);
+}
+
+.smSize {
+    padding: var(--cd-button-padding-combined-sm);
+    margin: var(--cd-button-margin-combined-sm);
+    border-width: var(--cd-button-border-size-sm);
+    border-radius: var(--cd-button-border-radius-sm); 
+}
+
+.mdSize {
+    padding: var(--cd-button-padding-combined-md);
+    margin: var(--cd-button-margin-combined-md);
+    border-width: var(--cd-button-border-size-md);
+    border-radius: var(--cd-button-border-radius-md); 
+}
+
+.lgSize {
+    padding: var(--cd-button-padding-combined-lg);
+    margin: var(--cd-button-margin-combined-lg);
+    border-width: var(--cd-button-border-size-lg);
+    border-radius: var(--cd-button-border-radius-lg); 
+}
+
+.primaryVariant {
+    color: var(--cd-button-text-color-primary);
+    background-color: var(--cd-button-surface-color-primary);
+    border-color: var(--cd-button-border-color-primary);
+}
+
+.primaryVariant:hover {
+    color: var(--cd-button-text-color-primary-hover);
+    background-color: var(--cd-button-surface-color-primary-hover);
+    border-color: var(--cd-button-border-color-primary-hover);
+}
+
+.primaryVariant:active {
+    color: var(--cd-button-text-color-primary-active);
+    background-color: var(--cd-button-surface-color-primary-active);
+    border-color: var(--cd-button-border-color-primary-active);
+}
+
+.primaryVariant:active:hover {
+    color: var(--cd-button-text-color-primary-active-hover);
+    background-color: var(--cd-button-surface-color-primary-active-hover);
+    border-color: var(--cd-button-border-color-primary-active-hover);
+}
+
+.primaryVariant:disabled {
+    color: var(--cd-button-text-color-primary-disabled);
+    background-color: var(--cd-button-surface-color-primary-disabled);
+    border-color: var(--cd-button-border-color-primary-disabled);
+}
+
+.primaryVariant:disabled:hover {
+    color: var(--cd-button-text-color-primary-disabled);
+    background-color: var(--cd-button-surface-color-primary-disabled);
+    border-color: var(--cd-button-border-color-primary-disabled);
+}
+
+.secondaryVariant {
+    color: var(--cd-button-text-color-secondary);
+    background-color: var(--cd-button-surface-color-secondary);
+    border-color: var(--cd-button-border-color-secondary);
+}
+
+.secondaryVariant:hover {
+    color: var(--cd-button-text-color-secondary-hover);
+    background-color: var(--cd-button-surface-color-secondary-hover);
+    border-color: var(--cd-button-border-color-secondary-hover);
+}
+
+.secondaryVariant:active {
+    color: var(--cd-button-text-color-secondary-active);
+    background-color: var(--cd-button-surface-color-secondary-active);
+    border-color: var(--cd-button-border-color-secondary-active);
+}
+
+.secondaryVariant:active:hover {
+    color: var(--cd-button-text-color-secondary-active-hover);
+    background-color: var(--cd-button-surface-color-secondary-active-hover);
+    border-color: var(--cd-button-border-color-secondary-active-hover);
+}
+
+.secondaryVariant:disabled {
+    color: var(--cd-button-text-color-secondary-disabled);
+    background-color: var(--cd-button-surface-color-secondary-disabled);
+    border-color: var(--cd-button-border-color-secondary-disabled);
+}
+
+.secondaryVariant:disabled:hover {
+    color: var(--cd-button-text-color-secondary-disabled);
+    background-color: var(--cd-button-surface-color-secondary-disabled);
+    border-color: var(--cd-button-border-color-secondary-disabled);
+}
+
+.tertiaryVariant {
+    color: var(--cd-button-text-color-tertiary);
+    background-color: var(--cd-button-surface-color-tertiary);
+    border-color: var(--cd-button-border-color-tertiary);
+}
+
+.tertiaryVariant:hover {
+    color: var(--cd-button-text-color-tertiary-hover);
+    background-color: var(--cd-button-surface-color-tertiary-hover);
+    border-color: var(--cd-button-border-color-tertiary-hover);
+}
+
+.tertiaryVariant:disabled {
+    color: var(--cd-button-text-color-tertiary-disabled);
+    background-color: var(--cd-button-surface-color-tertiary-disabled);
+    border-color: var(--cd-button-border-color-tertiary-disabled);
+}
+
+.tertiaryVariant:disabled:hover {
+    color: var(--cd-button-text-color-tertiary-disabled);
+    background-color: var(--cd-button-surface-color-tertiary-disabled);
+    border-color: var(--cd-button-border-color-tertiary-disabled);
+}
+
+.tertiaryVariant:active {
+    color: var(--cd-button-text-color-tertiary-active);
+    background-color: var(--cd-button-surface-color-tertiary-active);
+    border-color: var(--cd-button-border-color-tertiary-active);
+}
+
+.tertiaryVariant:active:hover {
+    color: var(--cd-button-text-color-tertiary-active-hover);
+    background-color: var(--cd-button-surface-color-tertiary-active-hover);
+    border-color: var(--cd-button-border-color-tertiary-active-hover);
+}

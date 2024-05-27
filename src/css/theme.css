@@ -1,0 +1,313 @@
+/* type-family-[modifier] */
+/* example: --cd-color-text-disabled */
+
+/* --cd-component-family-type-variant-[modifier] */
+:root {
+/* PRIMITIVES */
+    /* FONT FAMILY */
+    /* should be default fonts to avoid loading unncessary fonts for end user */
+    --cd-font-family-sans-serif-1: Arial, Helvetica, sans-serif;
+    --cd-font-family-serif-1: Georgia, 'Times New Roman', Times, serif;
+
+    /* BORDER SIZE SCALE */
+    --cd-border-width-0: 0px;
+    --cd-border-width-1: 1px;
+    --cd-border-width-2: 2px;
+    --cd-border-width-3: 3px;
+    --cd-border-width-4: 4px;
+    --cd-border-width-5: 5px;
+
+    /* BORDER RADIUS SCALE */
+    --cd-border-radius-0: 0;
+    --cd-border-radius-10: .125rem;
+    --cd-border-radius-20: .25rem;
+    --cd-border-radius-30: .5rem;
+    --cd-border-radius-40: 1rem;
+    --cd-border-radius-100: 100%;
+
+    /* FONT SIZE SCALE */
+    --cd-font-size-10: 0.694rem;
+    --cd-font-size-20: 0.833rem;
+    --cd-font-size-30: 1rem;
+    --cd-font-size-40: 1.2rem;
+    --cd-font-size-50: 1.44rem;
+    --cd-font-size-60: 1.728rem;
+    --cd-font-size-70: 2.074rem;
+    --cd-font-size-80: 2.488rem;
+    --cd-font-size-90: 2.986rem;
+
+    /* LINE HEIGHT SCALE */
+    --cd-line-height-sm: .8;
+    --cd-line-height-md: 1;
+    --cd-line-height-lg: 1.2;
+
+    /* FONT WEIGHT SCALE */
+    --cd-font-weight-100: 100;
+    --cd-font-weight-200: 200;
+    --cd-font-weight-300: 300;
+    --cd-font-weight-400: 400;
+    --cd-font-weight-500: 500;
+    --cd-font-weight-600: 600;
+    --cd-font-weight-700: 700;
+    --cd-font-weight-800: 800;
+    --cd-font-weight-900: 900;
+
+    /* SPACING SCALE */
+    /* (working) */
+    --cd-spacing-0: 0px;
+    --cd-spacing-50: 0.125rem;
+    --cd-spacing-100: 0.25rem;
+    --cd-spacing-200: 0.5rem;
+    --cd-spacing-300: 0.75rem;
+    --cd-spacing-400: 1rem;
+    --cd-spacing-500: 1.5rem;
+    --cd-spacing-600: 2rem;
+    --cd-spacing-700: 3.5rem;
+    --cd-spacing-800: 4rem;
+    --cd-spacing-900: 8rem;
+
+    /* NEUTRAL COLORS */
+    --cd-color-neutral-0: #ffffff;
+    --cd-color-neutral-50: #f5f5f5;
+    --cd-color-neutral-100: #e9e9e9;
+    --cd-color-neutral-200: #d9d9d9;
+    --cd-color-neutral-300: #c4c4c4;
+    --cd-color-neutral-400: #9d9d9d;
+    --cd-color-neutral-500: #7b7b7b;
+    --cd-color-neutral-600: #555555;
+    --cd-color-neutral-700: #434343;
+    --cd-color-neutral-800: #262626;
+    --cd-color-neutral-900: #000000;
+
+    /* COLORS */
+    --cd-color-blue-50: #e7eaee;
+    --cd-color-blue-100: #c1cad6;
+    --cd-color-blue-200: #9ba9bb;
+    --cd-color-blue-300: #76879f;
+    --cd-color-blue-400: #596e8c;
+    --cd-color-blue-500: #3b567b; /* Tint */
+    --cd-color-blue-600: #344f73;
+    --cd-color-blue-700: #2d4568;
+    --cd-color-blue-800: #273c5b; /* primary */
+    --cd-color-blue-900: #202b42;
+
+    --cd-color-green-50: #e3eee6;
+    --cd-color-green-100: #bcd4c0;
+    --cd-color-green-200: #95b99a;
+    --cd-color-green-300: #739e77;
+    --cd-color-green-400: #5f8b61;
+    --cd-color-green-500: #50784f;
+    --cd-color-green-600: #496c47; /* tint */
+    --cd-color-green-700: #405d3c; 
+    --cd-color-green-800: #364e32;
+    --cd-color-green-900: #263420; /* main */
+
+    --cd-color-purple-50: #fce8eb;
+    --cd-color-purple-100: #e4c9d1;
+    --cd-color-purple-200: #c9a8b3;
+    --cd-color-purple-300: #af8793;
+    --cd-color-purple-400: #9b6c7c;
+    --cd-color-purple-500: #885365;
+    --cd-color-purple-600: #7b4a5c; /* tint */
+    --cd-color-purple-700: #6a3f50;
+    --cd-color-purple-800: #583445;
+    --cd-color-purple-900: #472738; /* main */
+
+    --cd-color-tan-50: #f4e9d6;
+    --cd-color-tan-100: #d9c8b2; /* main */
+    --cd-color-tan-200: #b9a48b;
+    --cd-color-tan-300: #988263;
+    --cd-color-tan-400: #806845; /* tint */
+    --cd-color-tan-500: #684f28;
+    --cd-color-tan-600: #5e4622;
+    --cd-color-tan-700: #503a1a;
+    --cd-color-tan-800: #442d12;
+    --cd-color-tan-900: #361f04;
+
+    --cd-color-silver-50: #e8f1fa;
+    --cd-color-silver-100: #ccdce7; /* main */
+    --cd-color-silver-200: #b0c4d3;
+    --cd-color-silver-300: #93acbe;
+    --cd-color-silver-400: #7c98ad; /* tint */
+    --cd-color-silver-500: #65869d;
+    --cd-color-silver-600: #58778b;
+    --cd-color-silver-700: #486274;
+    --cd-color-silver-800: #3a4f5e;
+    --cd-color-silver-900: #283a46;
+
+/* ALIASES */
+    /* TEXT COLOR */
+    --cd-color-text-default-on-primary: var(--cd-color-tan-100);
+    --cd-color-text-accent-on-primary: var(--cd-color-silver-100);
+    --cd-color-text-neutral-on-primary: var(--cd-color-neutral-0);
+    --cd-color-text-default-on-primary-alt: var(--cd-color-neutral-0);
+    --cd-color-text-accent-on-primary-alt: var(--cd-color-silver-100);
+    --cd-color-text-neutral-on-primary-alt: var(--cd-color-neutral-0);
+
+    --cd-color-text-default-on-secondary: var(--cd-color-green-900);
+    --cd-color-text-accent-on-secondary: var(--cd-color-purple-900);
+    --cd-color-text-neutral-on-secondary: var(--cd-color-neutral-900);
+    --cd-color-text-default-on-secondary-alt: var(--cd-color-green-900);
+    --cd-color-text-accent-on-secondary-alt: var(--cd-color-purple-900);
+    --cd-color-text-neutral-on-secondary-alt: var(--cd-color-neutral-900);
+
+    --cd-color-text-default-on-tertiary: var(--cd-color-tan-100);
+    --cd-color-text-accent-on-tertiary:  var(--cd-color-silver-100);
+    --cd-color-text-neutral-on-tertiary: var(--cd-color-neutral-0);
+
+    --cd-color-text-default-on-disabled: var(--cd-color-neutral-300);
+
+    /* SURFACE COLOR */
+    --cd-color-surface-primary: var(--cd-color-green-900);
+    --cd-color-surface-primary-tint: var(--cd-color-green-600);
+    --cd-color-surface-primary-alt: var(--cd-color-blue-800);
+    --cd-color-surface-primary-alt-tint: var(--cd-color-blue-500);
+
+    --cd-color-surface-secondary: var(--cd-color-tan-100);
+    --cd-color-surface-secondary-tint: var(--cd-color-tan-400);
+    --cd-color-surface-secondary-alt: var(--cd-color-silver-100);
+    --cd-color-surface-secondary-alt-tint: var(--cd-color-silver-400);
+
+    --cd-color-surface-tertiary: var(--cd-color-purple-900);
+    --cd-color-surface-tertiary-tint: var(--cd-color-purple-600);
+
+    --cd-color-surface-neutral-light: var(--cd-color-neutral-0);
+    --cd-color-surface-neutral-light-tint: var(--cd-color-neutral-100);
+    --cd-color-surface-neutral-dark: var(--cd-color-neutral-900);
+    --cd-color-surface-neutral-dark-tint: var(--cd-color-neutral-800);
+    
+    --cd-color-surface-disabled: var(--cd-color-neutral-100);
+    --cd-color-surface-ghost: transparent;
+
+    /* BORDER COLOR */
+    --cd-color-border-primary: var(--cd-color-green-600);
+    --cd-color-border-secondary: var(--cd-color-tan-400);
+    --cd-color-border-tertiary: var(--cd-color-purple-600);
+    --cd-color-border-disabled:  var(--cd-color-neutral-100);
+
+/* COMPONENTS */
+    /* BUTTON TEXT COLOR */
+    --cd-button-text-color-primary: var(--cd-color-text-neutral-on-primary);
+    --cd-button-text-color-primary-disabled: var(--cd-color-text-default-on-disabled);
+    --cd-button-text-color-primary-hover: var(--cd-color-text-neutral-on-primary);
+    --cd-button-text-color-primary-active: var(--cd-color-text-neutral-on-primary);
+    --cd-button-text-color-primary-active-hover: var(--cd-color-text-neutral-on-primary);
+
+    --cd-button-text-color-secondary: var(--cd-color-text-neutral-on-secondary);
+    --cd-button-text-color-secondary-disabled: var(--cd-color-text-default-on-disabled);
+    --cd-button-text-color-secondary-hover: var(--cd-color-text-neutral-on-secondary);
+    --cd-button-text-color-secondary-active: var(--cd-color-text-neutral-on-secondary);
+    --cd-button-text-color-secondary-active-hover: var(--cd-color-text-neutral-on-secondary);
+
+    --cd-button-text-color-tertiary: var(--cd-color-text-neutral-on-tertiary);
+    --cd-button-text-color-tertiary-disabled: var(--cd-color-text-default-on-disabled);
+    --cd-button-text-color-tertiary-hover: var(--cd-color-text-neutral-on-tertiary);
+    --cd-button-text-color-tertiary-active: var(--cd-color-text-neutral-on-tertiary);
+    --cd-button-text-color-tertiary-active-hover: var(--cd-color-text-neutral-on-tertiary);
+
+    /* BUTTON SURFACE COLOR */
+    --cd-button-surface-color-primary: var(--cd-color-surface-primary);
+    --cd-button-surface-color-primary-disabled: var(--cd-color-surface-disabled);
+    --cd-button-surface-color-primary-hover: var(--cd-color-surface-primary-tint);
+    --cd-button-surface-color-primary-active: var(--cd-color-surface-primary-tint);
+    --cd-button-surface-color-primary-active-hover: var(--cd-color-surface-primary-tint);
+
+    --cd-button-surface-color-secondary: var(--cd-color-surface-secondary);
+    --cd-button-surface-color-secondary-disabled: var(--cd-color-surface-disabled);
+    --cd-button-surface-color-secondary-hover: var(--cd-color-surface-secondary-tint);
+    --cd-button-surface-color-secondary-active: var(--cd-color-surface-secondary-tint);
+    --cd-button-surface-color-secondary-active-hover: var(--cd-color-surface-secondary-tint);
+
+    --cd-button-surface-color-tertiary: var(--cd-color-surface-tertiary);
+    --cd-button-surface-color-tertiary-disabled: var(--cd-color-surface-disabled);
+    --cd-button-surface-color-tertiary-hover: var(--cd-color-surface-tertiary-tint);
+    --cd-button-surface-color-tertiary-active: var(--cd-color-surface-tertiary-tint);
+    --cd-button-surface-color-tertiary-active-hover: var(--cd-color-surface-tertiary-tint);
+
+    /* BUTTON BORDER COLOR */
+    --cd-button-border-color-primary: var(--cd-color-border-primary);
+    --cd-button-border-color-primary-disabled: var(--cd-color-border-disabled);
+    --cd-button-border-color-primary-hover: var(--cd-color-border-primary);
+    --cd-button-border-color-primary-active: var(--cd-color-border-primary);
+    --cd-button-border-color-primary-active-hover: var(--cd-color-border-primary);
+
+    --cd-button-border-color-secondary: var(--cd-color-border-secondary);
+    --cd-button-border-color-secondary-disabled: var(--cd-color-border-disabled);;
+    --cd-button-border-color-secondary-hover: var(--cd-color-border-secondary);
+    --cd-button-border-color-secondary-active: var(--cd-color-border-secondary);
+    --cd-button-border-color-secondary-active-hover: var(--cd-color-border-secondary);
+
+    --cd-button-border-color-tertiary: var(--cd-color-border-tertiary);
+    --cd-button-border-color-tertiary-disabled: var(--cd-color-border-disabled);
+    --cd-button-border-color-tertiary-hover: var(--cd-color-border-tertiary);
+    --cd-button-border-color-tertiary-active: var(--cd-color-border-tertiary);
+    --cd-button-border-color-tertiary-active-hover: var(--cd-color-border-tertiary);
+
+    /* BUTTON BORDER SIZE */
+    --cd-button-border-size-sm: var(--cd-border-width-1);
+    --cd-button-border-size-md: var(--cd-border-width-1);
+    --cd-button-border-size-lg: var(--cd-border-width-2);
+
+    /* BUTTON BORDER RADIUS */
+    --cd-button-border-radius-sm: var(--cd-border-radius-10);
+    --cd-button-border-radius-md: var(--cd-border-radius-10);
+    --cd-button-border-radius-lg: var(--cd-border-radius-10);
+
+    /* BUTTON MARGINS */
+    --cd-button-margin-top-sm: var(--cd-spacing-0);
+    --cd-button-margin-right-sm: var(--cd-spacing-0);
+    --cd-button-margin-bottom-sm: var(--cd-spacing-0);
+    --cd-button-margin-left-sm: var(--cd-spacing-0);
+    --cd-button-margin-combined-sm: var(--cd-button-margin-top-sm) var(--cd-button-margin-right-sm) var(--cd-button-margin-bottom-sm) var(--cd-button-margin-left-sm);
+
+    --cd-button-margin-top-md: var(--cd-spacing-0);
+    --cd-button-margin-right-md: var(--cd-spacing-0);
+    --cd-button-margin-bottom-md: var(--cd-spacing-0);
+    --cd-button-margin-left-md: var(--cd-spacing-0);
+    --cd-button-margin-combined-md: var(--cd-button-margin-top-md) var(--cd-button-margin-right-md) var(--cd-button-margin-bottom-md) var(--cd-button-margin-left-md);
+
+    --cd-button-margin-top-lg: var(--cd-spacing-0);
+    --cd-button-margin-right-lg: var(--cd-spacing-0);
+    --cd-button-margin-bottom-lg: var(--cd-spacing-0);
+    --cd-button-margin-left-lg: var(--cd-spacing-0);
+    --cd-button-margin-combined-lg: var(--cd-button-margin-top-lg) var(--cd-button-margin-right-lg) var(--cd-button-margin-bottom-lg) var(--cd-button-margin-left-lg);
+
+    /* BUTTON PADDING */
+    --cd-button-padding-top-sm: var(--cd-spacing-100);
+    --cd-button-padding-right-sm: var(--cd-spacing-300);
+    --cd-button-padding-bottom-sm: var(--cd-spacing-100);
+    --cd-button-padding-left-sm: var(--cd-spacing-300);
+    --cd-button-padding-combined-sm: var(--cd-button-padding-top-sm) var(--cd-button-padding-right-sm) var(--cd-button-padding-bottom-sm) var(--cd-button-padding-left-sm);
+
+    --cd-button-padding-top-md: var(--cd-spacing-200);
+    --cd-button-padding-right-md: var(--cd-spacing-400);
+    --cd-button-padding-bottom-md: var(--cd-spacing-200);
+    --cd-button-padding-left-md: var(--cd-spacing-400);
+    --cd-button-padding-combined-md: var(--cd-button-padding-top-md) var(--cd-button-padding-right-md) var(--cd-button-padding-bottom-md) var(--cd-button-padding-left-md);
+
+    --cd-button-padding-top-lg: var(--cd-spacing-300);
+    --cd-button-padding-right-lg: var(--cd-spacing-500);
+    --cd-button-padding-bottom-lg: var(--cd-spacing-300);
+    --cd-button-padding-left-lg: var(--cd-spacing-500);
+    --cd-button-padding-combined-lg: var(--cd-button-padding-top-lg) var(--cd-button-padding-right-lg) var(--cd-button-padding-bottom-lg) var(--cd-button-padding-left-lg);
+
+    /* BUTTON FONT SIZE */
+    --cd-button-font-size-sm: var(--cd-font-size-20);
+    --cd-button-font-size-md: var(--cd-font-size-30);
+    --cd-button-font-size-lg: var(--cd-font-size-40);
+
+    /* BUTTON LINE HEIGHTS */
+    --cd-button-line-height-sm: var(--cd-line-height-sm);
+    --cd-button-line-height-md: var(--cd-line-height-md);
+    --cd-button-line-height-lg: var(--cd-line-height-lg);
+
+    /* BUTTON FONT WEIGHT */
+    /* TODO: Investigate when font chosen*/
+    --cd-button-font-weight-sm: var(--cd-font-weight-400);
+    --cd-button-font-weight-md: var(--cd-font-weight-400);
+    --cd-button-font-weight-lg: var(--cd-font-weight-400);
+
+    /* BUTTON FONT FAMILY */
+    --cd-button-font-family: var(--cd-font-family-sans-serif-1);
+
+}
